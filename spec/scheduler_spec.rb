@@ -23,7 +23,7 @@ describe Scheduler do
     expect(scheduler.valid?).to eq true
   end
 
-  it 'validates the schedule meets the camp rules' do
+  it 'validates the schedule does not meet the camp rules' do
     input = ["archery", "crafts"]
     scheduler = Scheduler.new(input)
     expect(scheduler.valid?).to eq false
